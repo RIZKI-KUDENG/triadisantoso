@@ -9,16 +9,27 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-three/drei": "^10.0.7",
+    "@react-three/fiber": "^9.1.2",
+    "@react-three/rapier": "^2.1.0",
+    "@tabler/icons-react": "^3.33.0",
+    "aos": "^3.0.0-beta.6",
+    "clsx": "^2.1.1",
+    "meshline": "^3.3.1",
+    "motion": "^12.12.1",
+    "next": "15.3.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.3.2"
+    "tailwind-merge": "^3.3.0",
+    "three": "^0.176.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@tailwindcss/postcss": "^4",
+    "@types/aos": "^3.0.7",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4"
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
