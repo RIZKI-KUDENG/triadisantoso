@@ -15,7 +15,12 @@ export const Card = React.memo(
     hovered: number | null;
     setHovered: React.Dispatch<React.SetStateAction<number | null>>;
   }) => (
-    <div
+   <a href={card.link}
+   target="_blank"
+   rel="noopener noreferrer"
+   className="block"
+   >
+     <div
       onMouseEnter={() => setHovered(index)}
       onMouseLeave={() => setHovered(null)}
       className={cn(
@@ -39,6 +44,7 @@ export const Card = React.memo(
         </div>
       </div>
     </div>
+   </a>
   )
 );
 
@@ -47,6 +53,7 @@ Card.displayName = "Card";
 type Card = {
   title: string;
   src: string;
+  link: string;
 };
 
 export function FocusCards({ cards }: { cards: Card[] }) {
